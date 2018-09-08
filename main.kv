@@ -1,0 +1,53 @@
+<Container>:
+    display: display
+    rows: 1
+    column:2
+    BoxLayout:
+        orientation: "horizontal"
+        AddButton:
+            on_release: root.add_one()
+        SubtractButton:
+            on_release: root.subtract_one()
+	MultiplyButton:
+		on_release: root.multiply_one()
+	DivideButton:
+		on_release: root.divide_one()
+	one:
+	    on_release:root.one_1()
+	two:
+	    on_release:root.two_2()
+	three:
+	    on_release:root.three_3()
+	four:
+	    on_release:root.four_4()
+	five:
+	    on_release:root.five_5()
+	six:
+	    on_release:root.six_6()
+	seven:
+	    on_release:root.seven_7()
+	eight:
+	    on_release:root.eight_8()
+	nine:
+	    on_release:root.nine_9()
+	zero:
+	    on_release:root.zero_0()
+	EqualButton:
+	    on_release:root.equal()
+	left_brace:
+	    on_release:root.left_brace_one()
+	right_brace:
+	    on_release:root.right_brace_one()
+	exponent:
+	    on_release:root.exponent()
+	modulo:
+	    on_release:root.modulo()
+	dot:
+	    on_release:root.dot()
+	clr:
+	    on_release:root.clr()
+    Label:
+	
+        id: display
+        font_size: dp(20)
+        text: '0'
